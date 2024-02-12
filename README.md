@@ -14,7 +14,7 @@ dan lebih mudah dipahami oleh pembaca.
 Saya mengalami beberapa kesalahan, salah satunya adalah mendapatkan error ketika membuka 
 page localhost. Ini terjadi saat saya memilih dependencies (Thymeleaf) yang ada di spring 
 initializer. Solusinya adalah ketelitian dalam memilih semua dependencies yang dibutuhkan.
-
+git c
 ## Reflection 2
 
 - Dengan menerapkan unit testing, saya merasa lebih percaya dengan code saya. Jika ada error 
