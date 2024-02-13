@@ -21,14 +21,12 @@ public class ProductController {
         Product product = new Product();
         model.addAttribute("product", product);
         return "createProduct";
-
     }
 
     @PostMapping("/create")
     public String createProductPost(@ModelAttribute Product product, Model model){
         service.create(product);
         return "redirect:list";
-
     }
 
     @GetMapping("/list")
@@ -56,8 +54,4 @@ public class ProductController {
         service.deleteProduct(id);
         return "redirect:../list";
     }
-
-
-
-
 }
