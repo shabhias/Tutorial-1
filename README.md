@@ -37,6 +37,38 @@ yang mirip dengan yang sudah ada.
 
 
 
+"# tutorial-2"
+
+
+## Reflection 1
+
+- Tidak diperlukannya modifier pada class dan metode pengujian JUnit5
+
+Pada JUnit5, seharusnya class dan metode pengujian memiliki visibilitas default atau package-private Penggunaan modifier public pada class atau metode tidak direkomendasikan karena dapat mengakibatkan akses yang tidak diinginkan dan mengganggu isolasi pengujuan.
+
+
+Solusi: Untuk mengubah visibilitas class atau metode pengujian, kita perlu menghapus kata kunci public atau protected sehingga menggunakan modifier default atau package-private.
+
+-  Tidak diperlukannya import yang tidak diperlukan
+
+Adanya unnecessary import dalam kode dapat menyebabkan berbagai masalah, seperti meningkatkan kompleksitas kode, memperlambat proses kompilasi, dan membuat kode sulit dipahami Oleh karena itu, penting untuk menghapus import yang tidak diperlukan dan hanya menambahkan import yang benar-benar diperlukan dalam kode kita.
+
+
+Solusi: Untuk menghapus import yang tidak diperlukan, kita perlu melakukan pengecekan secara manual dan menghapus import yang tidak digunakan. Selain itu, kita juga perlu menambahkan import yang benar-benar diperlukan dalam kode kita.
+
+
+## Reflection 2
+
+Mengganti penggunaan injeksi @Autowired dengan menginisialisasi class secara langsung
+
+Framework dependensi Spring menggunakan anotasi @Inject dan @Autowired untuk melakukan dependency injection Namun, penggunaan injeksi seperti ini dapat menyebabkan masalah terkait mutabilitas dan behavior yang tidak dapat diprediksi.
+
+
+Solusi: Untuk menghindari masalah tersebut, kita dapat mengganti objek yang menggunakan injeksi @Autowired dengan menginisialisasi class secara langsung.
+
+
+
+
 
 
 
