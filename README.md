@@ -38,6 +38,34 @@ yang mirip dengan yang sudah ada.
 
 
 
+# MODULE 3
+
+
+## Reflection
+
+1. Explain what principles you apply to your project!
+    
+   - SRP, memisahkan antara CarController yang pada awalnya ada di ProductController
+   - OCP, menambahkan metode update pada model agar pemanggilan metode lebih umum pada repository
+   - ISP, memisahkan interface productService dan juga carService agar moduleritas lebih baik dibandingkan menggabungkan keduanya menjadi satu.Pendekatan ini dapat meningkatkan efisiensi dalam mengimplementasikan metode abstrak dan struktur kode menjadi lebih fleksibel.
+   - DIP, Pada CarRepository, saya mengganti objek dari CarServiceImpl yang merupakan kelas konkret menjadi CarService yang merupakan antarmuka, agar mengurangi atau menghilangkan hubungan antar komponen-komponen kelas konkret yang dapat disebut sebagai decoupling.
+   
+2. Explain the advantages of applying SOLID principles to your project with examples.
+    - SRP, kode menjadi lebih terorganisir dengan cara memisahkan dependency tiap kelas, memudahkan pemahaman dan komunikasi antar pengembang.
+    - OCP, dapat meningkatkan fleksibilitas dan meminimalkan dampak perubahan.
+    - LSP, dapat mengurangi ketergantungan antar kelas
+    - ISP, dapat memungkinkan polimorfisme yang lebih baik dan mengurangi ketergantungan antar kelas.
+    - DIP, dapat mengurangi dampak perubahan pada satu bagian kode terhadap bagian kode lainnya.
+
+    
+
+3. Explain the disadvantages of not applying SOLID principles to your project with examples.
+    - Jika tidak mengikuti DIP dan OCP, dapat mengakibatkan keterikatan yang kuat antara controller dan implementasi. Hal ini dapat menghasilkan testing yang buruk dan sulit untuk beralih antara implementasi untuk testing.
+    - Kesulitan dalam memahami dan memelihara kode karena tidak menerapkan SRP sehingga banyak tanggung jawab oleh controller, repository, atau model. 
+    - Jika tidak mengikuti ISP dan LSP, basis kode terikat erat dan kurang fleksibel karena antarmuka, abstraksi, atau kelas dasar dengan metode maupun dependensi yang tidak perlu.
+
+
+
 
 
 
