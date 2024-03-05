@@ -2,6 +2,7 @@ package id.ac.ui.cs.advprog.eshop.model;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Map;
 import id.ac.ui.cs.advprog.eshop.enums.PaymentStatus;
@@ -9,6 +10,7 @@ import id.ac.ui.cs.advprog.eshop.enums.PaymentStatus;
 @Builder
 @Getter
 public class Payment {
+    @Setter
     String id;
     String method;
     String status;
