@@ -1,4 +1,4 @@
-"# tutorial-1" 
+# MODULE 1
 
 ## Reflection 1
 
@@ -65,10 +65,22 @@ yang mirip dengan yang sudah ada.
     - Jika tidak mengikuti ISP dan LSP, basis kode terikat erat dan kurang fleksibel karena antarmuka, abstraksi, atau kelas dasar dengan metode maupun dependensi yang tidak perlu.
 
 
+   
+# MODULE 4
 
+## Reflection
 
+1. Reflect based on Percival (2017) proposed self-reflective questions (in “Principles and Best Practice of Testing” submodule, chapter “Evaluating Your Testing Objectives”), whether this TDD flow is useful enough for you or not. If not, explain things that you need to do next time you make more tests.
+   - Saya memastikan bahwa kode yang dibuat sudah memiliki tes fungsional agar bisa meyakinkan bahwa aplikasi saya sudah berfungsi. Namun, untuk meningkatkan keakuratan pengujian, saya perlu memastikan tes saya mencakup semua kasus yang diuji
+   - Tes yang saya buat, memastikan saya untuk melakukan refaktor kode dan juga saya mempertimbangkan jika diperlukan unit test tambahan bergantung pada kebutuhan. 
+   - Saya berusaha memperbaiki tes secara teratur untuk memastikan tes berjalan dengan baik. Namun saya terus mencari cara agar dapat mendeteksi bug secara efisien.
 
-
+2. You have created unit tests in Tutorial. Now reflect whether your tests have successfully followed F.I.R.S.T. principle or not. If not, explain things that you need to do the next time you create more tests.
+   - Saya sudah membagi test menjadi functional test dan unit test yang mempunyai dependency yang berbeda. Dan memfokuskan setiap tes memiliki fokus masing-masing.
+   - Tes saya sudah dirancang untuk berjalan secepat mungkin dengan mencari cara untuk meningkatkan efisiensi dan kecepatan tes.
+   - Menerapkan teknik mock, setUp, tearDown, dll agar terhindar dari duplikasi
+   - Menggunaka teknik Test Double pada saat fungsi saya membutuhkan fungsi lain.
+   - Pengujian mencakup semua happy path dan unhappy path dan memperhatikan tiap tes mencakup semua kasus yang mungkin terjadi. 
 
 
 
